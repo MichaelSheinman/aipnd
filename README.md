@@ -26,4 +26,15 @@ http://prntscr.com/kkka01
 
 ## Individual parts: 
 
-to be continued 
+* Loading the data: Loading the transforms, datasetsets and the dataloaders. This will be done for three separate sets:
+
+** Training set: The set the model iterates through in order to learn over a sequence of epochs. This set is also the only set whose images include special transforms such random rotation and random crop.
+
+** Validation set: The set the model iterates over when checking how each period of training affected the model's accuracy.
+
+** Testing set: A new set the model iterates over when checking the overall accuracy. 
+
+* Building the model: This section includes building the model, defining 
+
+
+* Creating the model: 
