@@ -73,7 +73,8 @@ predict:
 
 
 ## Credits:
-
-* People in Slank, great community and thanks for everyone for their help :) 
 * Partha PratimN: great mentor in the Udacity chat.    
+* People in Slank, great community and thanks for everyone for their help :) Details about help I recieved: 
+* Saving function: at first I was trying to save the whole model, but a fellow student showed me their way of saving the function and I used it. 
+* process_image: I also recieved help with this function when cropping the image. 
 
