@@ -74,7 +74,4 @@ predict:
 
 ## Credits:
 * Partha PratimN: great mentor in the Udacity chat.    
-* People in Slank, great community and thanks for everyone for their help :) Details about help I recieved: 
-* Saving function: at first I was trying to save the whole model, but a fellow student showed me their way of saving the function and I used it. 
-* process_image: I also recieved help with this function when cropping the image. 
-
+* People in Slank, great community and thanks for everyone for their help :) Two great helps I recieved which are not my own working is the Saving function. I had the issue where at first I was trying to save the whole model, but a fellow student showed me their way of saving the function and I used it. The second one is with the process_image function, I knew how to resize and normalize the image but I got the croping code from a student at slank. 
