@@ -34,7 +34,40 @@ http://prntscr.com/kkka01
 
 ** Testing set: A new set the model iterates over when checking the overall accuracy. 
 
-* Building the model: This section includes building the model, defining 
+* Building the model: This section includes building the model, defining the critertion(I used Adam) and the optimizer.
+
+* Training the model: In this part, the model will go through multiple epochs(4 in my case) and check how far it is from the solution that will classify it correctly. Next the model performs an update by the points it should reach, but it uses a learning rate to avoid going completely to that point. While doing this, I also use the validation set to check the accuracy and the loss on different data
+
+* Testing: This section is also measuring how far the model is from the solution but this time I do not update the weights and I just measure whether the prediction was correct. 
+
+* Saving checkpoint: Now that model is working, I save the checkpoint to be used later. 
+
+* Processing image: For the next couple of parts I had to actually show the images with their most likely parts. To do this, I start by resizing the image, cropping it and normalizing it. 
+
+* Predict: To predict the image classes I run the image through my model and return the classes and the prediction of the images with the greatest probability. 
+
+* Sanity checking: Using the prediction from the predict functions I use matplotlib to plot an inverted bar chart, which consits of the amount of classes return from the predict function with their probabilities. 
 
 
-* Creating the model: 
+## Arguments
+
+
+In part 2 of the project, the train.py and the predict.py files using argparse to allow the user to specify arguments of their own choice. This arguments include: 
+
+Common: 
+* gpu: The argument is a bool, stores True if provided but otherwise is default to False. 
+
+
+
+train: 
+* data_dir: The directory the data is placed at.  
+* arch: pretrained model to be used, increases accuracy. 
+* hidden units, learning_rate, epochs: Hyperparameters, specify how the model will train 
+* save_dir: checkpoing to save the model once training finished 
+
+predict: 
+* image: image to be tested
+* top_k: how many classes should be shown 
+* checkpoint: The checkpoint to check the image 
+* labels: the possible classes the image belongs to
+
