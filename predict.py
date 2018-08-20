@@ -21,7 +21,7 @@ from PIL import Image
 parser = argparse.ArgumentParser()
     
 parser.add_argument('--image', type=str, help='path to the image for testing')
-parser.add_argument('--top_k', type=int, help='Top classes to return', default=3)
+parser.add_argument('--top_k', type=int, help='Top classes to return', default=5)
 parser.add_argument('--checkpoint', type=str, help='Checkpoint to use the file with') 
 parser.add_argument('--gpu', action='store_true', help='amount of times the model will train')
 parser.add_argument('--labels', type=str, help='file for label names', default='cat_to_name.json')
