@@ -71,3 +71,9 @@ predict:
 * checkpoint: The checkpoint to check the image 
 * labels: the possible classes the image belongs to
 
+
+## Credits:
+
+* People in Slank, great community and thanks for everyone for their help :) 
+* Partha PratimN: great mentor in the Udacity chat.    
+
