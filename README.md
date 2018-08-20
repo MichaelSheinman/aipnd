@@ -56,13 +56,12 @@ In part 2 of the project, the train.py and the predict.py files using argparse t
 
 Common: 
 * gpu: The argument is a bool, stores True if provided but otherwise is default to False. 
-
-
+* arch: pretrained model to be used. In predict.py this argument will determine on what model will the model be loaded. In train.py this will determine on what model you train your network. 
+* hidden units: a hyperpramer for the hidden layer. 
 
 train: 
 * data_dir: The directory the data is placed at.  
-* arch: pretrained model to be used, increases accuracy. 
-* hidden units, learning_rate, epochs: Hyperparameters, specify how the model will train 
+* learning_rate, epochs: Hyperparameters, specify how the model will train 
 * save_dir: checkpoing to save the model once training finished 
 
 predict: 
